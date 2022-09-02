@@ -88,6 +88,7 @@ section{
     height: 6rem;
 }
 
+
 .header .navbar a{
     margin:0 1rem;
     font-size: 1.6rem;
@@ -98,6 +99,10 @@ section{
     color:var(--main-color);
     border-bottom: .1rem solid var(--main-color);
     padding-bottom: .5rem;
+}
+
+.header .icons{
+    display: none;
 }
 
 .header .icons div{
@@ -115,6 +120,7 @@ section{
     display: none;
 }
 
+/*
 .header .search-form{
     position: absolute;
     top:115%; right: 7%;
@@ -150,7 +156,9 @@ section{
 .header .search-form label:hover{
     color:var(--main-color);
 }
+*/
 
+/*
 .header .cart-items-container{
     position: absolute;
     top:100%; right: -100%;
@@ -203,6 +211,7 @@ section{
     width: 100%;
     text-align: center;
 }
+*/
 
 .home{
     min-height: 100vh;
@@ -262,6 +271,7 @@ section{
     line-height: 1.8;
 }
 
+/*
 .menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -303,7 +313,9 @@ section{
 .menu .box-container .box:hover > *{
     color:var(--black);
 }
+*/
 
+/*
 .products .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -362,6 +374,7 @@ section{
     font-weight: lighter;
     font-size: 1.5rem;
 }
+*/
 
 .review .box-container{
     display: grid;
@@ -449,6 +462,8 @@ section{
     background:none;
 }
 
+/*
+
 .blogs .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -502,9 +517,12 @@ section{
     color:#ccc;
     padding:1rem 0;
 }
+*/
 
 .footer{
-    background:var(--black);
+    background: url(../images/footer-bg.jpg) no-repeat;
+    background-size: cover;
+    /*background:var(--black);*/
     text-align: center;
 }
 
@@ -588,6 +606,10 @@ section{
 
 @media (max-width:768px){
 
+    .header .icons{
+        display: inline-block;
+    }
+
     #menu-btn{
         display: inline-block;
     }
@@ -596,7 +618,7 @@ section{
         position: absolute;
         top:100%; right: -100%;
         background: #fff;
-        width: 30rem;
+        width: 100%;
         height: calc(100vh - 9.5rem);
     }
 
